@@ -32,4 +32,9 @@ p {
     display: none !important;
 }
 
+.supraAdd {
+    vertical-align: super;
+    font-size: smaller;
+    /* this is an example of a style */
+}
 
