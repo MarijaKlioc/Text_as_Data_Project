@@ -33,7 +33,7 @@
       <div type="page" n="22v" rend="verso">
         <pb facs="#p22v"/>
         <metamark function="pagenumber"><num><hi rend="circled">78</hi></num></metamark>
-        <p>
+        <p style="text-indent: -5px;">
         so hideous as <hi rend="underline">He</hi>... I had gazed on him<lb/>
         while unfinished; <del rend="crossedOut">and I thought</del> he<lb/>
         was ugly then. But when those muscles<lb/>
@@ -73,7 +73,7 @@
         issued into the streets, pacing<add place="supralinear" hand="#PBS">them</add>
           with<lb/>
           quick steps as if I <del rend="crossedOut">ough</del> sought to<lb/>
-        <add place="left_margin" hand="#PBS">avoid</add>the wretch whom I feared every
+        <add place="marginleft" hand="#PBS">avoid</add>the wretch whom I feared every
           turn-<lb/>
           ing in the street would present to<lb/></p></div>
     </body>

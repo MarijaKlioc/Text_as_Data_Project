@@ -47,7 +47,6 @@
         <p><xsl:apply-templates/></p>
     </xsl:template>
 
-  
     <xsl:template match="tei:add[@place = 'marginleft']">
         <span class="marginAdd">
             <xsl:apply-templates/>
@@ -62,16 +61,34 @@
             <xsl:apply-templates/>
         </del>
     </xsl:template>
-    
-    <!-- all the supralinear additions are given in a span with the class supraAdd, make sure to put this class in superscript in the CSS file, -->
+   
     <xsl:template match="tei:add[@place = 'supralinear']">
-        <span class="supraAdd">
+        <span style="vertical-align: super;">
+            <xsl:attribute name="class">
+                <xsl:value-of select="concat(@hand, 'supraAdd')"/>
+            </xsl:attribute>
             <xsl:apply-templates/>
         </span>
     </xsl:template>
     
+    <xsl:template match="tei:add[@place = 'intralinear']">
+        <span>
+            <xsl:attribute name="class">
+                <xsl:value-of select="concat(@hand, 'intraAdd')"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>  
     
-    <!-- add additional templates below, for example to transform the tei:lb in <br/> empty elements, tei:hi[@rend = 'sup'] in <sup> elements, the underlined text, additions with the attribute "overwritten" etc. -->
+    <xsl:template match="tei:add[@place = 'overwritten']">
+        <span>
+            <xsl:attribute name="class">
+                <xsl:value-of select="concat(@hand, 'overAdd')"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>  
+    
     <xsl:template match="tei:lb">
         <br/>
     </xsl:template>
@@ -82,7 +99,7 @@
         </sup>
     </xsl:template>
     
-    <xsl:template match="tei:hi[@rend='underline']">
+    <xsl:template match="tei:hi[@rend='u']">
         <u>
             <xsl:apply-templates/>
         </u>
@@ -100,4 +117,37 @@
         </span>
     </xsl:template>
     
+       
+    <xsl:template match="tei:metamark[@function='below']">
+        <span class="below-mark">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
+    <xsl:template match="tei:metamark[@function='above']">
+        <span class="above-mark">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
+    <xsl:template match="tei:metamark[@function='pagenumber']">
+        <span class="page-number">
+            <hi rend="circled">
+                <xsl:apply-templates/>
+            </hi>
+        </span>
+    </xsl:template>
+    
+    <xsl:template match="tei:p[contains(@style, 'text-indent: -5px;')]">
+        <span style="display: block; text-indent: -5px;">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
+    <xsl:template match="tei:p[contains(@style, 'text-indent: 20px;')]">
+        <span style="display: block; text-indent: 20px;">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+   
 </xsl:stylesheet>

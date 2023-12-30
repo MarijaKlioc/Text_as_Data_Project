@@ -31,10 +31,91 @@ p {
 .mirador-canvas-nav {
     display: none !important;
 }
-
+ 
 .supraAdd {
     vertical-align: super;
     font-size: smaller;
-    /* this is an example of a style */
 }
 
+.subAdd {
+    font-size: smaller;
+}
+
+.intraAdd {
+    vertical-align: baseline;
+}
+
+.overAdd {
+    vertical-align: baseline;
+}
+
+span.below-mark {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+span.above-mark {
+    position: relative;
+    bottom: 0.5em;
+    font-size: smaller;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+span.supraAdd {
+    position: relative;
+    vertical-align: top;
+}
+
+span.page-number {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+}
+
+span.page-number hi {
+    font-size: 16px; 
+    border-radius: 50%; 
+    border: 2px solid black; 
+    padding: 6px; 
+    display: inline-block; 
+    background-color: white;
+}
+
+#toggleDeletionsButton {
+  padding: 0.8em 2em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+}
+
+#toggleDeletionsButton:hover {
+  background-color: #dfae7b;
+  box-shadow: 0px 15px 20px rgba(190, 160, 130, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+td {
+  padding-left: 90px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+img {
+    padding: 10px;
+}

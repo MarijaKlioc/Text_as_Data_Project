@@ -33,7 +33,7 @@
       <div type="page" n="22v" rend="recto">
         <pb facs="#p22r"/>
         <metamark function="pagenumber"><num><hi rend="circled">77</hi></num></metamark>
-      <p>
+        <p style="text-indent: -5px;">
          to change and I thought that I held <lb/>
          the corpse of my dead mother in my arms 
           <del type="overwritten" hand="#MWS" rend="blackink">,</del>
@@ -46,8 +46,7 @@
         <lb/>
         the grave worms crawling in the folds of<lb/>
         the flannel; I started 
-          <add place="infralinear" hand="#MWS" rend="blackink"><metamark></metamark></add>
-          <note>'^' is used as metamark, close visual resemblance</note>
+        <add place="infralinear" hand="#MWS" rend="blackink"><metamark>^</metamark></add>
           <add place="supralinear" hand="#MWS" rend="blackink">from my sleep</add>
           with horror, a
         <lb/>
@@ -70,17 +69,13 @@
         its way through the window shutters, I<lb/>
         beheld the wretch — the miserable<lb/>
         monster whom I had created;
-          <add place="infralinear" hand="#MWS" rend="blackink"><metamark>-</metamark>
-            <note>'-'is used as metamark, a thick line is used</note>
-          </add>
+          <add place="infralinear" hand="#MWS" rend="blackink"><metamark>-</metamark></add>
           he hel
           <del type="overwritten" hand="#MWS" rend="blackink"><!-- unclear char --></del>
           <add place="inline" hand="#MWS" rend="blackink">d</add>
         <lb/>
         up the curtain, 
-          <add place="infralinear" hand="#MWS" rend="blackink"><metamark>-</metamark>
-            <note>'-'is used as metamark, a thick line is used</note>
-          </add>
+          <add place="infralinear" hand="#MWS" rend="blackink"><metamark>-</metamark></add>
           and his eyes; if eyes
         <lb/>
         they may be called, were fixed on me – His<lb/>
@@ -97,8 +92,8 @@
         ing attentively, catching and fearing each<lb/>
         sound as if it were to announce the<lb/>
         arrival of the demoniacal corpse to<lb/>
-        which I had so miserabl<del type="overwritten" hand="#PBS" rend="blackink">e</del><add place="inline" hand="#PBS" rend="blackink">y</add> given life.<lb/>
-        Oh! no mortal could support <lb/>
+        which I had so miserabl<del type="overwritten" hand="#PBS" rend="blackink">e</del><add place="intralinear" hand="#PBS" rend="blackink">y</add> given life.<lb/></p>
+        <p>Oh! no mortal could support <lb/>
         the horror of that countenance.a<lb/>
         mummy
         <metamark>&#8257;</metamark>

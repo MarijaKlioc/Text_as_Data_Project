@@ -98,21 +98,62 @@ function documentLoader() {
   statsLoader();
   // Event listener for sel1 change
   function selectHand(event) {
-  var visible_mary = document.getElementsByClassName('#MWS');
-  var visible_percy = document.getElementsByClassName('#PBS');
-  // Convert the HTMLCollection to an array for forEach compatibility
-  var MaryArray = Array.from(visible_mary);
-  var PercyArray = Array.from(visible_percy);
-    if (event.target.value == 'both') {
-    //write an forEach() method that shows all the text written and modified by both hand (in black?). The forEach() method of Array instances executes a provided function once for each array element.
-     
-    } else if (event.target.value == 'Mary') {
-     //write an forEach() method that shows all the text written and modified by Mary in a different color (or highlight it) and the text by Percy in black. 
-     
-    } else {
-     //write an forEach() method that shows all the text written and modified by Percy in a different color (or highlight it) and the text by Mary in black.
-    
+    var visible_mary = document.getElementsByClassName('#MWS');
+    var visible_percy = document.getElementsByClassName('#PBS');
+    // Convert the HTMLCollection to an array for forEach compatibility
+    var MaryArray = Array.from(visible_mary);
+    var PercyArray = Array.from(visible_percy);
+      if (event.target.value == 'both') {
+      //forEach() method that shows all the text written and modified by both hands.
+      MaryArray.forEach(element => {
+        element.style.color = 'black';
+    });
+
+      PercyArray.forEach(element => {
+        element.style.color = 'black';
+    });
+      } else if (event.target.value == 'Mary') {
+       //forEach() method that shows all the text written and modified by Mary. 
+      MaryArray.forEach(element => {
+        element.style.color = 'blue';
+    });
+
+      PercyArray.forEach(element => {
+        element.style.color = 'black';
+    });
+      } else {
+       //forEach() method that shows all the text written and modified by Percy.
+      PercyArray.forEach(element => {
+        element.style.color = 'red';
+    });
+      
+      
+      MaryArray.forEach(element => {
+        element.style.color = 'black';
+    });}
+
+
     }
+  // write another function that will toggle the display of the deletions by clicking on a button
+  function toggleDeletions() {
+    var deletions = document.querySelectorAll('del');
+    deletions.forEach(function (deletion) {
+      // Toggle the visibility of each deletion
+      deletion.style.display = (deletion.style.display === 'inline' || !deletion.style.display) ? 'none' : 'inline';
+    });
   }
-// write another function that will toggle the display of the deletions by clicking on a button
-// EXTRA: write a function that will display the text as a reading text by clicking on a button or another dropdown list, meaning that all the deletions are removed and that the additions are shown inline (not in superscript)
+  // EXTRA: write a function that will display the text as a reading text by clicking on a button or another dropdown list, meaning that all the deletions are removed and that the additions are shown inline (not in superscript)
+  function toggleReadingText() {
+    var deletions = document.querySelectorAll('del');
+
+    // Toggle the visibility of deletions
+    deletions.forEach(function (deletion) {
+      deletion.style.display = (deletion.style.display === 'inline' || !deletion.style.display) ? 'none' : 'inline';
+    });
+
+    // Toggle the display of additions between inline and none
+    var additions = document.querySelectorAll('span[style*="vertical-align: super"]');
+    additions.forEach(function (addition) {
+      addition.style.verticalAlign = (addition.style.verticalAlign === 'baseline' || !addition.style.verticalAlign) ? 'super' : 'baseline';
+    });
+  }

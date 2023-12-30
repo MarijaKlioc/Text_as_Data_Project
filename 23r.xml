@@ -35,7 +35,7 @@
             <pb facs="#p23r"/>
                    
             <metamark function="pagenumber"><num><hi rend="circled">79</hi></num></metamark>
-            <p>
+            <p style="text-indent: -5px;">
                my view. I did not dare <del type="crossedOut" hand="#MWS" rend="blackink">to</del> return<lb/>
                to the appartment <add place="supralinear" hand="#MWS" rend="blackink">which</add> I inhabited but<lb/>
                felt impelled to hurry on although<lb/>
@@ -49,17 +49,18 @@
                upon my mind. I traversed the streets<lb/>
                without any clear conception of where<lb/>
                I was or what I was doing: my heart<lb/>
-               palpitated <del type="crossedOut" hand="#PBS" rend="blackink">with</del><add place="supralinear" hand="#PBS" rend="blackink">in the sickness of</add> fear and I hurried<lb/>
+               palpitated <del type="crossedOut" hand="#PBS">with</del><add place="supralinear" hand="#PBS">in the sickness of</add> fear and I hurried<lb/>
                on with irregular steps not daring<lb/>
                to look about me,<lb/>
             </p>
-            <list><item>"Like one who on a lon<del type="crossedOut" hand="#MWS" rend="blackink">s</del>esome road</item>
-            <item>"and having once turned round</item>
-               <item rend="right"><add place="supralinear" hand="#MWS" rend="blackink">walks on</add></item>
-               <item><del type="crossedOut" hand="#MWS" rend="blackink">wal</del>And turns no more his head</item>
-            <item>Because he knows a frightful</item>
-            <item rend="right">fiend</item>
-               <item>"doth close behind hum tread."*<add place="marginleft" hand="#MS" rend="blackink">*Coleridge's<lb/>"Ancient Mariner.'</add></item></list>
+            
+            <p style="text-indent: 20px;">"Like one who on a lon<del type="crossedOut" hand="#MWS" rend="blackink">s</del>esome road<lb/></p>
+            <p style="text-indent: 20px;">"doth walk in fear and dread."<lb/></p>
+            <p style="text-indent: 20px;">"and having once turned round<add place="supralinear" hand="#MWS" rend="blackink">walks on</add><lb/></p>
+            <p style="text-indent: 20px;"><del type="crossedOut" hand="#MWS" rend="blackink">"wal</del>And turns no more his head<lb/></p>
+            <p style="text-indent: 20px;">"Because he knows a frightful<lb/></p>
+            <p style="text-indent: 20px;">"doth close behind him <add place="supralinear"><metamark>L</metamark>fiend</add>tread.*<add place="marginleft" hand="#MWS" rend="blackink">*Coleridge's<lb/>"Ancient Mariner.'</add><lb/></p>
+            
             <p>
                Continueing thus, I came at lenght<lb/>
                <del type="crossedOut" hand="#PBS" rend="blackink">opposite</del><add place="supralinear" hand="#MWS" rend="blackink">opposite to</add> the Inn at which the dili<lb/>
