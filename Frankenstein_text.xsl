@@ -65,7 +65,7 @@
     <xsl:template match="tei:add[@place = 'supralinear']">
         <span style="vertical-align: super;">
             <xsl:attribute name="class">
-                <xsl:value-of select="concat(@hand, 'supraAdd')"/>
+                <xsl:value-of select="concat(@hand, ' supraAdd')"/>
             </xsl:attribute>
             <xsl:apply-templates/>
         </span>
@@ -74,7 +74,7 @@
     <xsl:template match="tei:add[@place = 'intralinear']">
         <span>
             <xsl:attribute name="class">
-                <xsl:value-of select="concat(@hand, 'intraAdd')"/>
+                <xsl:value-of select="concat(@hand, ' intraAdd')"/>
             </xsl:attribute>
             <xsl:apply-templates/>
         </span>
@@ -83,7 +83,7 @@
     <xsl:template match="tei:add[@place = 'overwritten']">
         <span>
             <xsl:attribute name="class">
-                <xsl:value-of select="concat(@hand, 'overAdd')"/>
+                <xsl:value-of select="concat(@hand, ' overAdd')"/>
             </xsl:attribute>
             <xsl:apply-templates/>
         </span>
